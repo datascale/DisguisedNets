@@ -13,7 +13,7 @@
 	TensorFlow
 
 ### Dataset ###
-  download ubyte.gz files from http://yann.lecun.com/exdb/mnist/
+  download ubyte.gz files from http://yann.lecun.com/exdb/mnist
   Run: python read_mnist.py from ./datasets/
 
 ### Individual Program Flows ###
@@ -45,8 +45,8 @@
         For different noise levels:
             Perturbation flow for MNIST
             for 5 times:
-              train on disguised_images test on disguised images (model quality)
-              train on untransformed images test on disguised images (visual re-identification attack)
+              model quality
+              visual re-identification attack
 
   The results for model quality are sequntially written on ./out/org_on_org.csv
   The results for visual re-identification attack sequentially written on ./out/org_on_pert.csv 
