@@ -39,7 +39,7 @@
     Produces the test results corect/total
 
 ### Model Quality and Visual Re-identification Experiments###
-  Run: sh ./run_all_deep.sh
+  Run: bash ./run_all_deep.sh
   
     For different block sizes:
         For different noise levels:
@@ -58,10 +58,10 @@
 
   B. Run the class-membershp attacks
     On untransformed MNIST model
-    Run: sh ./run_model_dist.sh
+    Run: bash ./run_model_dist.sh
 
     On transformed MNIST model
-    Run: sh ./run_model_dist_pert.sh
+    Run: bash ./run_model_dist_pert.sh
       
     Outputs: The model predictions for each class is written to
     ./datasets/class_outputs/class_outputs_i for class i
