@@ -1,5 +1,10 @@
+#Disguised-Nets#
+
 ### Deep learning over perturbed data ###
-	A. Perturb training and testing csv files with 1) Block-wise RMT 2) Permutation 3) Random Additive Perturbation
+	A. Perturb training and testing csv files with:
+     1) Block-wise RMT 
+     2) Permutation 
+     3) Random Additive Perturbation
 	B. Run the MNIST CNN over different block sizes and noise levels
 
 ### Dependencies ###
@@ -9,12 +14,10 @@
 
 ### Dataset ###
   download ubyte.gz files from http://yann.lecun.com/exdb/mnist/
-	------------------------------
   Run: python read_mnist.py from ./datasets/
 
 ### Individual Program Flows ###
 	A. Perturbation flow --- > Disguising training and testing images
-	------------------------------
 		Run: python ./Perturb/main.py data_path/data_name image_size block_size noise_level \
     RMT_type
 		-
@@ -23,9 +26,7 @@
 		Outputs: data_name_{train/test}_${noise}_${block_dim}_${block_dim}.csv 
     
     ** there is no padding so ensure the image size is a multiple of block_size
-	-------------------------------
 	B. DNN over Disguised Images
-	-------------------------------
 		Run: python ./models/conv_simple.py training_csv testing_csv
 		-
 		Example: python ./models/conv_simple.py fashion_train.csv fashion_test.csv
@@ -38,9 +39,7 @@
     Produces the test results corect/total
 
 ### Model Quality and Visual Re-identification Experiments###
-	-------------------------------
   Run: sh ./run_all_deep.sh
-	-------------------------------
   
     For different block sizes:
         For different noise levels:
@@ -53,15 +52,11 @@
   The results for visual re-identification attack sequentially written on ./out/org_on_pert.csv 
 
 ### Class-membership Attack Experiment ###
-	-------------------------------
   A. Generate class_wise test data (the target class images)
-	-------------------------------
     Run: python ./class_membership/class_wise_test.py ./datasets/{mnist/fashion}_test.csv \
       ./datasets/{mnist/fashion}_test_labels.csv
 
-	-------------------------------
   B. Run the class-membershp attacks
-	-------------------------------
     On untransformed MNIST model
     Run: sh ./run_model_dist.sh
 
