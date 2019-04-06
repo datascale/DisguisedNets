@@ -38,7 +38,7 @@
 
     Produces the test results corect/total
 
-### Model Quality and Visual Re-identification Experiments###
+### Model Quality and Visual Re-identification Experiments ###
   Run: bash ./run_all_deep.sh
   
     For different block sizes:
