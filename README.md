@@ -14,12 +14,12 @@
 
 ### Dataset ###
   download ubyte.gz files from http://yann.lecun.com/exdb/mnist
+  
   Run: python read_mnist.py from ./datasets/
 
 ### Individual Program Flows ###
 	A. Perturbation flow --- > Disguising training and testing images
-		Run: python ./Perturb/main.py data_path/data_name image_size block_size noise_level \
-    RMT_type
+		Run: python ./Perturb/main.py data_path/data_name image_size block_size noise_level RMT_type
 		-
 		Example: python ./Perturb/main.py ./dataset/mnist 28 28 4 4 10.0 orthogonal
 		-
