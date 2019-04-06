@@ -11,8 +11,8 @@
 	numpy
 	pandas
 	TensorFlow
-
-### Dataset ###
+	
+### Datasets ###
   download ubyte.gz files from http://yann.lecun.com/exdb/mnist
   
   Run: python read_mnist.py from ./datasets/
