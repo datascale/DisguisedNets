@@ -51,7 +51,7 @@
   The results for model quality are sequntially written on ./out/org_on_org.csv
   The results for visual re-identification attack sequentially written on ./out/org_on_pert.csv 
 
-### Class-membership Attack Experiment ###
+### Class-membership Attack Experiments ###
   A. Generate class_wise test data (the target class images)
   
     Run: python ./class_membership/class_wise_test.py ./datasets/{mnist/fashion}_test.csv \
