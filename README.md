@@ -53,14 +53,17 @@
 
 ### Class-membership Attack Experiment ###
   A. Generate class_wise test data (the target class images)
+  
     Run: python ./class_membership/class_wise_test.py ./datasets/{mnist/fashion}_test.csv \
       ./datasets/{mnist/fashion}_test_labels.csv
 
   B. Run the class-membershp attacks
     On untransformed MNIST model
+    
     Run: bash ./run_model_dist.sh
 
     On transformed MNIST model
+    
     Run: bash ./run_model_dist_pert.sh
       
     Outputs: The model predictions for each class is written to
