@@ -58,18 +58,19 @@
       ./datasets/{mnist/fashion}_test_labels.csv
 
   B. Run the class-membershp attacks
-    On untransformed MNIST model
+  
+    1. On untransformed MNIST model
     
     Run: bash ./run_model_dist.sh
 
-    On transformed MNIST model
+    2. On transformed MNIST model
     
     Run: bash ./run_model_dist_pert.sh
       
     Outputs: The model predictions for each class is written to
     ./datasets/class_outputs/class_outputs_i for class i
 
-    These distributions can be analyzed for entropy/fano factor computation
+    These distributions can be analyzed for entropy/fano factor computation.
     
 
 
